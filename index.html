@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pivot Healthcare Company LLC</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #ffffff;
+      color: #1a1a1a;
+      line-height: 1.7;
+    }
+
+    /* NAV */
+    nav {
+      background: #fff;
+      border-bottom: 1px solid #e8e8e8;
+      padding: 0 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 68px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .nav-logo {
+      font-size: 1.2rem;
+      font-weight: 800;
+      color: #0f6b57;
+      letter-spacing: -0.3px;
+    }
+    .nav-logo span { color: #1a1a1a; }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 32px;
+    }
+    nav ul a {
+      text-decoration: none;
+      color: #555;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+    nav ul a:hover { color: #0f6b57; }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(135deg, #0f6b57 0%, #0a4f40 100%);
+      color: #fff;
+      padding: 100px 40px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 900;
+      letter-spacing: -1px;
+      margin-bottom: 16px;
+      line-height: 1.15;
+    }
+    .hero h1 span { color: #7ee8d4; }
+    .hero p {
+      font-size: 1.2rem;
+      color: rgba(255,255,255,0.8);
+      max-width: 600px;
+      margin: 0 auto 36px;
+    }
+    .btn {
+      display: inline-block;
+      background: #fff;
+      color: #0f6b57;
+      font-weight: 700;
+      padding: 14px 32px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: background 0.2s;
+    }
+    .btn:hover { background: #e6f7f3; }
+
+    /* SECTION */
+    section {
+      padding: 80px 40px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    section h2 {
+      font-size: 2rem;
+      font-weight: 800;
+      color: #0f6b57;
+      margin-bottom: 12px;
+    }
+    section .lead {
+      color: #555;
+      font-size: 1.05rem;
+      max-width: 680px;
+      margin-bottom: 48px;
+    }
+
+    /* CARDS */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+    .card {
+      background: #f7faf9;
+      border: 1px solid #e0eeea;
+      border-radius: 16px;
+      padding: 32px;
+    }
+    .card-icon {
+      font-size: 2rem;
+      margin-bottom: 16px;
+    }
+    .card h3 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #0f6b57;
+      margin-bottom: 8px;
+    }
+    .card p { color: #666; font-size: 0.95rem; }
+
+    /* ABOUT */
+    .about-section {
+      background: #f7faf9;
+      border-top: 1px solid #e0eeea;
+      border-bottom: 1px solid #e0eeea;
+    }
+    .about-section section { padding: 80px 40px; }
+
+    /* CONTACT */
+    .contact-box {
+      background: #0f6b57;
+      border-radius: 16px;
+      padding: 48px;
+      color: #fff;
+      text-align: center;
+    }
+    .contact-box h2 { color: #fff; margin-bottom: 12px; }
+    .contact-box p { color: rgba(255,255,255,0.8); margin-bottom: 24px; }
+    .contact-box a {
+      color: #7ee8d4;
+      font-weight: 700;
+      font-size: 1.1rem;
+      text-decoration: none;
+    }
+    .contact-box a:hover { text-decoration: underline; }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 32px 40px;
+      color: #999;
+      font-size: 0.85rem;
+      border-top: 1px solid #e8e8e8;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 2rem; }
+      nav ul { display: none; }
+      section { padding: 60px 24px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-logo">Pivot<span>Health</span></div>
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="hero">
+    <h1>Healthcare &amp; Technology<br /><span>Built for Real People</span></h1>
+    <p>Pivot Healthcare Company LLC develops digital health solutions and technology applications that improve how people access and experience care.</p>
+    <a href="#contact" class="btn">Get in Touch</a>
+  </div>
+
+  <section id="services">
+    <h2>What We Do</h2>
+    <p class="lead">We sit at the intersection of healthcare and technology — building products and services that make both industries work better.</p>
+    <div class="cards">
+      <div class="card">
+        <div class="card-icon">🏥</div>
+        <h3>Healthcare Services</h3>
+        <p>Accessible, patient-centered primary care and health services delivered through modern digital platforms.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">📱</div>
+        <h3>Health Technology Apps</h3>
+        <p>iOS and web applications designed to connect patients with care, streamline health workflows, and improve outcomes.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🔒</div>
+        <h3>Data Privacy &amp; Compliance</h3>
+        <p>All products are built with HIPAA principles in mind — your data is protected, never sold, and used only to serve you.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="about-section">
+    <section id="about">
+      <h2>About Us</h2>
+      <p class="lead">Pivot Healthcare Company LLC is a Texas-based company focused on closing the gap between healthcare access and modern technology. We build apps and services for everyday people — not just enterprise clients.</p>
+      <p style="color:#555; font-size:0.95rem;">Our team brings together clinical knowledge and software development expertise to create tools that are simple, secure, and genuinely useful. Whether it's a patient-facing mobile app or a healthcare workflow tool, we build it with care.</p>
+    </section>
+  </div>
+
+  <section id="contact">
+    <div class="contact-box">
+      <h2>Contact Us</h2>
+      <p>Questions about our services or products? We'd love to hear from you.</p>
+      <a href="mailto:admin@pivothealthtx.com">admin@pivothealthtx.com</a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2026 Pivot Healthcare Company LLC &nbsp;·&nbsp; Texas, USA &nbsp;·&nbsp; pivothealthtx.com
+  </footer>
+
+</body>
+</html>
